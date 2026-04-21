@@ -110,12 +110,6 @@ Run with explicit values:
   --public-network-access Disabled
 ```
 
-Show help:
-
-```bash
-./injection-byon.sh --help
-```
-
 ## Resources created
 
 After a successful run, you should expect these resource types:
