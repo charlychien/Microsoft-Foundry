@@ -36,7 +36,14 @@ Before running the script, make sure you have:
    - Resource groups
    - Virtual networks and subnets
    - Cognitive Services accounts and child resources
-
+5. Register Resource Providers on the Subscription.
+   - az provider register --namespace 'Microsoft.KeyVault'
+   - az provider register --namespace 'Microsoft.CognitiveServices'
+   - az provider register --namespace 'Microsoft.Storage'
+   - az provider register --namespace 'Microsoft.Search'
+   - az provider register --namespace 'Microsoft.Network'
+   - az provider register --namespace 'Microsoft.App'
+   - az provider register --namespace 'Microsoft.ContainerService'
 
 ## Default behavior
 
