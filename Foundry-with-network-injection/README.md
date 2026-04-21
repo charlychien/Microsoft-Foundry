@@ -163,6 +163,18 @@ az network vnet show \
   --query "{name:name,addressPrefixes:addressSpace.addressPrefixes,subnets:subnets[].{name:name,prefix:addressPrefix,delegations:delegations[].serviceName}}"
 ```
 
+## Delete virtual network commands
+
+If having trouble on delete the virtual network after the deleted Foundry has purged. Try below commands...
+
+```bash
+az network vnet subnet update \
+  --resource-group <your-rg-name> \
+  --vnet-name <your-vnet-name> \
+  --name <your-subnet-name> \
+  --remove serviceAssociationLinks
+```
+
 ## Future enhancements
 
 If this script needs to be extended, likely next steps are:
