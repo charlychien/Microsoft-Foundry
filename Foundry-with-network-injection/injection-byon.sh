@@ -60,6 +60,7 @@ PROJECT_DESCRIPTION='project subscription'
 VNET_NAME='your-vnet-name'
 VNET_PREFIX='10.XX.0.0/16'
 AGENT_SUBNET_NAME='agent-snet'
+# # At least /27 CIDR range is required
 AGENT_SUBNET_PREFIX='10.XX.0.0/24'
 PE_SUBNET_NAME='pe-subnet'
 PE_SUBNET_PREFIX='10.XX.1.0/24'
